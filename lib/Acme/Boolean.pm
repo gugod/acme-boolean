@@ -34,6 +34,7 @@ our %EXPORT_TAGS = (
 
 1;
 
+
 =head1 SYNOPSIS
 
 To be more literalistic:
@@ -51,17 +52,17 @@ To be more literalistic:
 This module provides a lot of words for you to express from the very
 trustful to the toally errorneous;
 
-=head1 TRUE
+=head2 TRUE
 
 These words can be used to refer to a true value: correct accurate
 right verifiable truthful trusty.
 
-=head1 FALSE
+=head2 FALSE
 
 And these words are false values: untrue wrong incorrect errorneous
 fallacious untruthful fabricated nah.
 
-=haed1 Adjectives
+=head2 Adjectives
 
 Optionally it's possible to say it more nicely:
 
@@ -80,7 +81,6 @@ true/false vocabularies: so totally very definitely.
 
 =head2 SEE ALSO
 
-L<boolean>, the boring version of this module.
+L<boolean>, the plain version of this module.
 
-=cut
 
