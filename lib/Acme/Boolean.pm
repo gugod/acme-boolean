@@ -1,4 +1,6 @@
 package Acme::Boolean;
+# ABSTRACT: There is more then one way to be true.
+
 use strict;
 use warnings;
 
@@ -18,7 +20,12 @@ my @false = map {
     $_;
 } qw(untrue wrong incorrect errorneous fallacious untruthful fabricated nah nil);
 
-our @EXPORT = (qw(true false), @true, @false);
+my @ad = map {
+    *{$_} = sub($) { shift; };
+    $_;
+} qw(so totally very definitely);
+
+our @EXPORT = (qw(true false), @ad, @true, @false);
 our @EXPORT_OK = qw(isTrue isFalse isBoolean);
 our %EXPORT_TAGS = (
     default => [@EXPORT],
