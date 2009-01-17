@@ -13,12 +13,12 @@ no strict 'refs';
 my @true = map {
     *{"$_"} = \&true;
     $_;
-} qw(correct accurate right verifiable truthful trusty);
+} qw(verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
 
 my @false = map {
     *{$_} = \&false;
     $_;
-} qw(untrue wrong incorrect errorneous fallacious untruthful fabricated nah);
+} qw(untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
 
 my @ad = map {
     *{$_} = sub($) { shift; };
@@ -54,13 +54,28 @@ trustful to the toally errorneous;
 
 =head2 TRUE
 
-These words can be used to refer to a true value: correct accurate
-right verifiable truthful trusty.
+These words can be used to refer to a true value:
+
+verifiable trusty accurate actual appropriate authentic authoritative
+correct dependable direct exact factual fitting genuine honest
+indubitable kosher lawful legal legitimate natural normal perfect
+precise proper pure regular right rightful sincere straight trustworthy
+truthful typical undeniable undesigning undoubted unerring unfaked
+unfeigned unquestionable veracious veridical veritable wash
+
 
 =head2 FALSE
 
-And these words are false values: untrue wrong incorrect errorneous
-fallacious untruthful fabricated nah.
+And these words are false values:
+
+untrue wrong incorrect errorneous fallacious untruthful nah apocryphal
+beguiling bogus casuistic concocted counterfactual deceitful deceiving
+delusive dishonest distorted erroneous ersatz fake fanciful faulty
+fictitious fishy fraudulent illusive imaginary improper inaccurate
+inexact invalid lying mendacious misleading misrepresentative
+mistaken phony sham sophistical specious spurious unfounded unreal
+unsound
+
 
 =head2 Adjectives
 
