@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 use Acme::Boolean;
 use Test::More;
 
