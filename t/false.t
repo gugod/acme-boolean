@@ -1,7 +1,7 @@
 use Acme::Boolean;
 use Test::More;
 
-plan tests => 7;
+plan tests => 8;
 
 ok !untrue;
 ok !wrong;
@@ -10,3 +10,4 @@ ok !errorneous;
 ok !fallacious;
 ok !untruthful;
 ok !nah;
+ok !Acme::Boolean::no;

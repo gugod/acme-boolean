@@ -13,12 +13,12 @@ no strict 'refs';
 my @true = map {
     *{"$_"} = \&true;
     $_;
-} qw(verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
+} qw(yes verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
 
 my @false = map {
     *{$_} = \&false;
     $_;
-} qw(untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
+} qw(no untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
 
 my @ad = map {
     *{$_} = sub($) { shift; };
