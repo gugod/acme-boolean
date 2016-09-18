@@ -23,7 +23,7 @@ my @false = map {
 my @ad = map {
     *{$_} = sub($) { shift; };
     $_;
-} qw(so totally very definitely);
+} qw(so totally very definitely really);
 
 our @EXPORT = (qw(true false), @ad, @true, @false);
 our @EXPORT_OK = qw(isTrue isFalse isBoolean);
