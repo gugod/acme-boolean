@@ -10,3 +10,5 @@ perl:
 before_install:
   - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
   - source ~/travis-perl-helpers/init --auto
+  - dzil listdeps | cpanm
+  - dzil authordeps | cpanm
