@@ -92,7 +92,8 @@ Or you can:
 In your lovely sub.
 
 At this moment you can use these adjectives in front of any of those
-true/false vocabularies: so totally very definitely.
+true/false vocabularies: so totally very definitely really certainly
+surely unquestionably undoubtedly absolutely.
 
 =head2 SEE ALSO
 
