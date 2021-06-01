@@ -15,15 +15,20 @@ my @true = map {
     $_;
 } map { ($_, uc($_)) } qw(yes verifiable trusty accurate actual appropriate authentic authoritative correct dependable direct exact factual fitting genuine honest indubitable kosher lawful legal legitimate natural normal perfect precise proper pure regular right rightful sincere straight trustworthy truthful typical undeniable undesigning undoubted unerring unfaked unfeigned unquestionable veracious veridical veritable wash);
 
+sub NO { false }
+sub no { false }
+
 my @false = map {
     *{$_} = \&false;
     $_;
-} map { ($_, uc($_)) } qw(no untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
+} map { ($_, uc($_)) } qw(untrue wrong incorrect errorneous fallacious untruthful nah apocryphal beguiling bogus casuistic concocted counterfactual deceitful deceiving delusive dishonest distorted erroneous ersatz fake fanciful faulty fictitious fishy fraudulent illusive imaginary improper inaccurate inexact invalid lying mendacious misleading misrepresentative mistaken phony sham sophistical specious spurious unfounded unreal unsound);
+
+push @false, 'NO', 'no';
 
 my @ad = map {
     *{$_} = sub($) { shift; };
     $_;
-} map { ($_, uc($_)) } qw(so totally very definitely really certainly surely unquestionably undoubtedly absolutely exactly);
+} map { ($_, uc($_)) } qw(just so totally very definitely really certainly surely unquestionably undoubtedly absolutely exactly);
 
 sub NOT($) { not shift }
 push @ad, 'NOT';
