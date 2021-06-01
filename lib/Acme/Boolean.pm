@@ -124,7 +124,8 @@ way writers put it.
 
 The builtin keyword C<not> that flips true/false value is a nice
 add-on to boolean words but the all caps version is not provided by
-perl. There it is provided by this module.
+perl. Therefore C<Acme::Boolean> completes perl by providing the all
+caps C<NOT> unary operator.
 
 =head2 SEE ALSO
 
