@@ -101,7 +101,7 @@ At this moment you can use these adjectives in front of any of those
 true/false vocabularies:
 
 so totally very definitely really certainly surely unquestionably
-undoubtedly absolutely.
+just undoubtedly absolutely.
 
 Adjectives can be stacked too:
 

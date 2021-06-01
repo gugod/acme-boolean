@@ -3,7 +3,7 @@
 use Acme::Boolean;
 use Test::More;
 
-plan tests => 11;
+plan tests => 14;
 
 ok so correct;
 ok very right;
@@ -16,3 +16,7 @@ ok TOTALLY UNDENIABLE;
 ok NOT EXACTLY LYING;
 ok REALLY REALLY TRUE;
 ok not ABSOLUTELY FAKE;
+
+ok ! just NO;
+ok ! just NO NO;
+ok ! just just NO NO NO;
