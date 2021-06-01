@@ -112,7 +112,7 @@ although that may accidently include some emotions to the logic.
 In fact, if strong emotion is intentionally wished for, all the introduced
 words comes with a all caps version at your disposal.
 
-Here are some notable examles:
+Here are some notable examples:
 
     my $p = SO true;
     my $q = NOT exactly lying;
