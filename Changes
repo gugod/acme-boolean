@@ -1,5 +1,8 @@
-0.05
-        - Add a few more adjectives: certainly surely unquestionably undoubtedly absolutely
+0.06
+        - 2021/06/01 is a good day to release an Acme module
+        - Allow all caps for all keywords
+        - Add: NOT
+        - Acmier documentation
 
 0.05
-	- fix tests
+        - Add a few more adjectives: certainly surely unquestionably undoubtedly absolutely
