@@ -3,7 +3,7 @@
 use Acme::Boolean;
 use Test::More;
 
-plan tests => 11;
+plan tests => 12;
 
 ok true, "true";
 ok correct, "correct";
@@ -16,3 +16,6 @@ ok yes, "yes";
 ok EXACT, "EXACT";
 ok PURE, "PURE";
 ok CORRECT, "CORRECT";
+
+my $v = (NO, really not fishy);
+ok $v, "NO, really not fishy";

@@ -125,12 +125,31 @@ Here are some notable examples:
 Be notified that readers my not preceive such embedded emotion the same
 way writers put it.
 
-=head2 Special mention
+=head2 Special forms
 
 The builtin keyword C<not> that flips true/false value is a nice
 add-on to boolean words but the all caps version is not provided by
 perl. Therefore C<Acme::Boolean> completes perl by providing the all
 caps C<NOT> unary operator.
+
+    my $f = NOT yes; # false
+    my $t = NOT NOT yes; # true
+
+The keyword C<NO> is also stackable this expression means NO:
+
+    NO NO NO NO NO
+
+Be very careful on using NO with other Acme::Boolean keywords for it
+always reduce everything on its right-hand side to a false
+value. After all, NO means NO. So this means NO.
+
+    NO really not fishy
+
+However, this expression means YES:
+
+    NO, really not fishy
+
+Be aware of the significance of punctuations.
 
 =head2 SEE ALSO
 
